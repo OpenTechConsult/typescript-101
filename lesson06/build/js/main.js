@@ -11,6 +11,12 @@ var Coder = /** @class */ (function () {
         this.age = age;
         this.lang = lang;
     }
+    Coder.prototype.getAge = function () {
+        return "Hello, I'm ".concat(this.age);
+    };
     return Coder;
 }());
 var Dave = new Coder('Dave', 'Rock', 42);
+console.log(Dave.getAge());
+// console.log(Dave.age)
+// console.log(Dave.lang)
